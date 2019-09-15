@@ -1,0 +1,12 @@
+#!/bin/bash
+IMAGE_NAME='robot-docker'
+
+docker ps -a | awk '{ print $1,$2 }' | grep $IMAGE_NAME:latest | awk '{print $1}' | xargs -I {} docker stop {}
+stop=$!
+wait $stop
+docker ps -a | awk '{ print $1,$2 }' | grep $IMAGE_NAME:latest | awk '{print $1}' | xargs -I {} docker rm {}
+remove=$!
+wait $remove
+docker rmi $IMAGE_NAME
+delete=$!
+wait $delete
