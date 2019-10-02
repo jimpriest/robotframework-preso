@@ -8,6 +8,9 @@ IMAGE_NAME='robot-docker'
 # This default will use the example /test directory in this repo
 TEST_PATH=$(pwd)
 
-docker run -it --security-opt seccomp=$(pwd)/chrome.json --shm-size=1gb  -v $TEST_PATH:/robot $IMAGE_NAME:latest robot --timestampoutputs --outputdir results/ $@ .
+# If you want time stamped output result files add:  --timestampoutputs 
+# Default behavior is to overwrite the results each test
+
+docker run -it --security-opt seccomp=$(pwd)/chrome.json --shm-size=1gb  -v $TEST_PATH:/robot $IMAGE_NAME:latest robot --outputdir results/ $@ .
 RESULT=$?
 exit $RESULT

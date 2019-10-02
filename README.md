@@ -89,17 +89,24 @@ You can send parameters as part of Robot.sh script
 
 e.g.
 ```
-
 ./robot.sh -v URL:https://www.amazon.com 
-
 ```
 
 This is sent to the container like this:
 
 ```
-
 robot -v URL:https://www.amazon.com 
 ```
+
+## Running Sample Tests
+
+Pass a suite directory to Robot command:
+
+```
+ ./robot.sh --suite a-simple
+```
+
+Examine the /results directory after running tests to see logs, results and screenshots.
 
 ## Credits
 
@@ -107,8 +114,42 @@ This was original forked and heavily modified from: https://github.com/cgowez/ro
 
 Found a work around for Chrome error in headless mode here which eliminates the '--no-sandbox' option: https://github.com/Zenika/alpine-chrome
 
+## Suggested VSCode Extensions
+
+* [HTML Preview](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode)
+* [Robot Framework Intellisense](https://marketplace.visualstudio.com/items?itemName=TomiTurtiainen.rf-intellisense)
+* [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+
 ## Disclaimer
 
 * I build this mainly to use for my own personal use.  YMMV. 
 * It works on my system :)
 * It is pitch black. You are likely to be eaten by a grue.
+
+
+## License
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org>
