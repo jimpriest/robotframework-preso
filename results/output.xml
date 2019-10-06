@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on linux)" generated="20191006 15:03:05.160" rpa="false">
+<suite id="s1" name="Robot" source="/robot">
+<suite id="s1-s1" name="Tests" source="/robot/tests">
+<suite id="s1-s1-s1" name="H-Form" source="/robot/tests/h-form">
+<suite id="s1-s1-s1-s1" name="Test" source="/robot/tests/h-form/test.robot">
+<kw name="Suite Setup" library="common" type="setup">
+<doc>This will run before every suite</doc>
+<kw name="Initialize Test Data" library="common">
+<doc>This sets up data used for testing
+- Faker variables for testing</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=========================================================</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.532" endtime="20191006 15:03:05.532"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\nInitializing test data</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.532" endtime="20191006 15:03:05.533"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=========================================================\n</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.533" endtime="20191006 15:03:05.533"></status>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<assign>
+<var>${FAKER_FIRST_NAME}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.533" level="INFO">${FAKER_FIRST_NAME} = Albert</msg>
+<status status="PASS" starttime="20191006 15:03:05.533" endtime="20191006 15:03:05.533"></status>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<assign>
+<var>${FAKER_LAST_NAME}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.534" level="INFO">${FAKER_LAST_NAME} = Monroe</msg>
+<status status="PASS" starttime="20191006 15:03:05.534" endtime="20191006 15:03:05.534"></status>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<assign>
+<var>${FAKER_PHONE_NUMBER}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.534" level="INFO">${FAKER_PHONE_NUMBER} = (815)208-5659x81592</msg>
+<status status="PASS" starttime="20191006 15:03:05.534" endtime="20191006 15:03:05.534"></status>
+</kw>
+<kw name="Street Address" library="FakerLibrary">
+<doc>:example '791 Crist Parks'</doc>
+<assign>
+<var>${FAKER_STREET_ADDRESS}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.535" level="INFO">${FAKER_STREET_ADDRESS} = 981 Levy Forges</msg>
+<status status="PASS" starttime="20191006 15:03:05.534" endtime="20191006 15:03:05.535"></status>
+</kw>
+<kw name="Paragraph" library="FakerLibrary">
+<doc>:returns: A single paragraph. For example: 'Sapiente sunt omnis. Ut
+    pariatur ad autem ducimus et. Voluptas rem voluptas sint modi dolorem amet.'</doc>
+<assign>
+<var>${FAKER_PARAGRAPH}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.535" level="INFO">${FAKER_PARAGRAPH} = Writer quickly find age wait.</msg>
+<status status="PASS" starttime="20191006 15:03:05.535" endtime="20191006 15:03:05.535"></status>
+</kw>
+<kw name="Sentence" library="FakerLibrary">
+<doc>Generate a random sentence
+:example 'Lorem ipsum dolor sit amet.'</doc>
+<assign>
+<var>${FAKER_SENTENCE}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.536" level="INFO">${FAKER_SENTENCE} = Ball fish month store must couple.</msg>
+<status status="PASS" starttime="20191006 15:03:05.536" endtime="20191006 15:03:05.536"></status>
+</kw>
+<kw name="City" library="FakerLibrary">
+<doc>:example 'Sashabury'</doc>
+<assign>
+<var>${FAKER_CITY}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.536" level="INFO">${FAKER_CITY} = Lake Danielfort</msg>
+<status status="PASS" starttime="20191006 15:03:05.536" endtime="20191006 15:03:05.536"></status>
+</kw>
+<kw name="State" library="FakerLibrary">
+<assign>
+<var>${FAKER_STATE}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.537" level="INFO">${FAKER_STATE} = Washington</msg>
+<status status="PASS" starttime="20191006 15:03:05.537" endtime="20191006 15:03:05.537"></status>
+</kw>
+<kw name="Country" library="FakerLibrary">
+<assign>
+<var>${FAKER_COUNTRY}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.537" level="INFO">${FAKER_COUNTRY} = Netherlands Antilles</msg>
+<status status="PASS" starttime="20191006 15:03:05.537" endtime="20191006 15:03:05.537"></status>
+</kw>
+<kw name="Postcode" library="FakerLibrary">
+<doc>:example 86039-9874</doc>
+<assign>
+<var>${FAKER_ZIPCODE}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.537" level="INFO">${FAKER_ZIPCODE} = 53197</msg>
+<status status="PASS" starttime="20191006 15:03:05.537" endtime="20191006 15:03:05.537"></status>
+</kw>
+<kw name="Free Email Domain" library="FakerLibrary">
+<assign>
+<var>${FAKER_EMAIL_DOMAIN}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.538" level="INFO">${FAKER_EMAIL_DOMAIN} = yahoo.com</msg>
+<status status="PASS" starttime="20191006 15:03:05.538" endtime="20191006 15:03:05.538"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>${FAKER_FIRST_NAME}.${FAKER_LAST_NAME}@${FAKER_EMAIL_DOMAIN}</arg>
+</arguments>
+<assign>
+<var>${FAKER_EMAIL}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.538" level="INFO">${FAKER_EMAIL} = Albert.Monroe@yahoo.com</msg>
+<status status="PASS" starttime="20191006 15:03:05.538" endtime="20191006 15:03:05.538"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.539" level="INFO">${FAKER_FIRST_NAME} = Albert</msg>
+<status status="PASS" starttime="20191006 15:03:05.538" endtime="20191006 15:03:05.539"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_LAST_NAME}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.539" level="INFO">${FAKER_LAST_NAME} = Monroe</msg>
+<status status="PASS" starttime="20191006 15:03:05.539" endtime="20191006 15:03:05.539"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_PHONE_NUMBER}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.540" level="INFO">${FAKER_PHONE_NUMBER} = (815)208-5659x81592</msg>
+<status status="PASS" starttime="20191006 15:03:05.539" endtime="20191006 15:03:05.540"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_STREET_ADDRESS}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.540" level="INFO">${FAKER_STREET_ADDRESS} = 981 Levy Forges</msg>
+<status status="PASS" starttime="20191006 15:03:05.540" endtime="20191006 15:03:05.540"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_PARAGRAPH}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.541" level="INFO">${FAKER_PARAGRAPH} = Writer quickly find age wait.</msg>
+<status status="PASS" starttime="20191006 15:03:05.541" endtime="20191006 15:03:05.541"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_SENTENCE}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.542" level="INFO">${FAKER_SENTENCE} = Ball fish month store must couple.</msg>
+<status status="PASS" starttime="20191006 15:03:05.541" endtime="20191006 15:03:05.542"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_CITY}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.542" level="INFO">${FAKER_CITY} = Lake Danielfort</msg>
+<status status="PASS" starttime="20191006 15:03:05.542" endtime="20191006 15:03:05.542"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_STATE}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.543" level="INFO">${FAKER_STATE} = Washington</msg>
+<status status="PASS" starttime="20191006 15:03:05.543" endtime="20191006 15:03:05.543"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_COUNTRY}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.544" level="INFO">${FAKER_COUNTRY} = Netherlands Antilles</msg>
+<status status="PASS" starttime="20191006 15:03:05.544" endtime="20191006 15:03:05.544"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_ZIPCODE}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.545" level="INFO">${FAKER_ZIPCODE} = 53197</msg>
+<status status="PASS" starttime="20191006 15:03:05.544" endtime="20191006 15:03:05.545"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FAKER_EMAIL}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.545" level="INFO">${FAKER_EMAIL} = Albert.Monroe@yahoo.com</msg>
+<status status="PASS" starttime="20191006 15:03:05.545" endtime="20191006 15:03:05.545"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:05.532" endtime="20191006 15:03:05.545"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>URL: ${URL}</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.545" endtime="20191006 15:03:05.546"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser: ${BROWSER}</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.546" endtime="20191006 15:03:05.546"></status>
+</kw>
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.547" level="INFO">${time} = 2019-10-06 15:03:05</msg>
+<status status="PASS" starttime="20191006 15:03:05.547" endtime="20191006 15:03:05.547"></status>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<doc>Converts between supported `date formats`.</doc>
+<arguments>
+<arg>${time}</arg>
+<arg>result_format=%I:%M %p</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20191006 15:03:05.550" level="INFO">${time} = 03:03 PM</msg>
+<status status="PASS" starttime="20191006 15:03:05.547" endtime="20191006 15:03:05.550"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=========================================================</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.550" endtime="20191006 15:03:05.550"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Starting test (Suite Setup) @ ${time}\n</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.550" endtime="20191006 15:03:05.551"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:05.531" endtime="20191006 15:03:05.551"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Order Robot">
+<kw name="Test Setup" library="common" type="setup">
+<doc>This will run before every test</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n=========================================================</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.552" endtime="20191006 15:03:05.552"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Setup\n</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:05.552" endtime="20191006 15:03:05.552"></status>
+</kw>
+<kw name="Setup Browser" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:05.553" level="INFO">Opening browser 'headlesschrome' to base url 'https://form.jotform.com/92783859042165'.</msg>
+<status status="PASS" starttime="20191006 15:03:05.553" endtime="20191006 15:03:07.118"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1280</arg>
+<arg>1900</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:07.118" endtime="20191006 15:03:07.221"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:05.552" endtime="20191006 15:03:07.222"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:05.551" endtime="20191006 15:03:07.222"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstname}</arg>
+<arg>${FAKER_FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:07.225" level="INFO">Typing text 'Albert' into text field 'id=first_2'.</msg>
+<status status="PASS" starttime="20191006 15:03:07.224" endtime="20191006 15:03:07.339"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastname}</arg>
+<arg>${FAKER_LAST_NAME}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:07.340" level="INFO">Typing text 'Monroe' into text field 'id=last_2'.</msg>
+<status status="PASS" starttime="20191006 15:03:07.340" endtime="20191006 15:03:07.413"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191006 15:03:07.664" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20191006 15:03:07.413" endtime="20191006 15:03:07.664"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${submit_form}</arg>
+</arguments>
+<msg timestamp="20191006 15:03:07.665" level="INFO">Clicking element 'id=input_13'.</msg>
+<status status="PASS" starttime="20191006 15:03:07.665" endtime="20191006 15:03:08.061"></status>
+</kw>
+<kw name="Check for confirmation">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191006 15:03:08.300" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20191006 15:03:08.062" endtime="20191006 15:03:08.301"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Thank You</arg>
+</arguments>
+<msg timestamp="20191006 15:03:08.306" level="INFO">Page title is 'Thank You'.</msg>
+<status status="PASS" starttime="20191006 15:03:08.301" endtime="20191006 15:03:08.306"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:08.062" endtime="20191006 15:03:08.306"></status>
+</kw>
+<kw name="Test Teardown" library="common" type="teardown">
+<doc>This will run after every test</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n=========================================================</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:08.307" endtime="20191006 15:03:08.307"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Teardown\n</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:08.307" endtime="20191006 15:03:08.307"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191006 15:03:08.537" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20191006 15:03:08.308" endtime="20191006 15:03:08.538"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20191006 15:03:08.538" endtime="20191006 15:03:08.599"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:08.306" endtime="20191006 15:03:08.600"></status>
+</kw>
+<doc>User should be able to order a robot</doc>
+<status status="PASS" starttime="20191006 15:03:05.551" endtime="20191006 15:03:08.600" critical="yes"></status>
+</test>
+<kw name="Suite Teardown" library="common" type="teardown">
+<doc>This will run before every suite</doc>
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20191006 15:03:08.607" level="INFO">${time} = 2019-10-06 15:03:08</msg>
+<status status="PASS" starttime="20191006 15:03:08.606" endtime="20191006 15:03:08.608"></status>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<doc>Converts between supported `date formats`.</doc>
+<arguments>
+<arg>${time}</arg>
+<arg>result_format=%I:%M %p</arg>
+</arguments>
+<assign>
+<var>${time}</var>
+</assign>
+<msg timestamp="20191006 15:03:08.611" level="INFO">${time} = 03:03 PM</msg>
+<status status="PASS" starttime="20191006 15:03:08.608" endtime="20191006 15:03:08.611"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\nEnding test (Suite Teardown) @ ${time}</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:08.612" endtime="20191006 15:03:08.613"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=========================================================\n</arg>
+</arguments>
+<status status="PASS" starttime="20191006 15:03:08.614" endtime="20191006 15:03:08.615"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:08.604" endtime="20191006 15:03:08.616"></status>
+</kw>
+<status status="PASS" starttime="20191006 15:03:05.187" endtime="20191006 15:03:08.616"></status>
+</suite>
+<status status="PASS" starttime="20191006 15:03:05.186" endtime="20191006 15:03:08.624"></status>
+</suite>
+<status status="PASS" starttime="20191006 15:03:05.184" endtime="20191006 15:03:08.627"></status>
+</suite>
+<status status="PASS" starttime="20191006 15:03:05.161" endtime="20191006 15:03:08.631"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Robot">Robot</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Tests">Robot.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="H-Form">Robot.Tests.H-Form</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Test">Robot.Tests.H-Form.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
