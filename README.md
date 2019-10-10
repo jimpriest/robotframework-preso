@@ -79,13 +79,19 @@ Log:     /robot/results/log.html
 Report:  /robot/results/report.html
 ```
 
-## Cleanup
+## Maintenance
 
 ```
 ./remove
 ```
 
-Remove any container and images related to this Dockerfile!  After running this you will need to rebuild your image.
+Remove any containers and images related to this Dockerfile!  After running this you will need to rebuild your image.
+
+```
+./cleanup
+```
+
+This will cleanup files from /results. Handy to run between tests.
 
 
 ## Sending additional arguments to Robot ##
