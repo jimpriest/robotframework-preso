@@ -1,4 +1,6 @@
 *** Settings ***
+Documentation     A very simple test suite with a single test 
+
 Library                 SeleniumLibrary
 
 *** Test Cases ***

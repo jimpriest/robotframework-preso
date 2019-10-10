@@ -2,7 +2,7 @@
 Library             SeleniumLibrary
 
 *** Variables ***
-${URL}  https://www.amazon.com
+${URL}  https://www.thecrumb.com
 ${BROWSER}  headlesschrome
 ${REMOTE_URL}  ${EMPTY}
 ${DESIRED_CAPABILITIES}  ${EMPTY}

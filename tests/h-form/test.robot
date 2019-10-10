@@ -1,4 +1,8 @@
 *** Settings ***
+Documentation     Test Jot contact form
+...
+...               This test will generate fake data and fill out a form
+
 Resource            common.robot
 
 Suite Setup         Suite Setup
