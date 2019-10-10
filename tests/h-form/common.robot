@@ -1,6 +1,8 @@
 *** Settings ***
 Library             SeleniumLibrary
 Library             DateTime
+Library             FakerLibrary  locale=en_US
+
 
 *** Variables ***
 ${URL}          https://form.jotform.com/92783859042165
@@ -9,7 +11,7 @@ ${BROWSER}      headlesschrome
 *** Keywords ***
 Setup Browser
   Open Browser          ${URL}   ${BROWSER}
-  Set Window Size  1280  900
+  Set Window Size  1280  1900
 
 Suite Setup
     [Documentation]   This will run before every suite
@@ -78,9 +80,3 @@ Initialize Test Data
     Set suite variable      ${FAKER_COUNTRY}
     Set suite variable      ${FAKER_ZIPCODE}
     Set suite variable      ${FAKER_EMAIL}
-
-
-Get title of the page
-    ${pageTitle}=                      get title
-    [Return]                           ${pageTitle}
-

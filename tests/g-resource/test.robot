@@ -10,3 +10,5 @@ Suite Teardown      Suite Teardown
 Open Site
   Log to console   Running tests!
 
+Another Test Case
+  Should Be True    1<2

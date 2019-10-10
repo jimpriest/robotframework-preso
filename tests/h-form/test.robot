@@ -1,6 +1,4 @@
 *** Settings ***
-Library             FakerLibrary  locale=en_US
-
 Resource            common.robot
 
 Suite Setup         Suite Setup
@@ -39,6 +37,7 @@ Order Robot
   [Documentation]  User should be able to order a robot
   Input text  ${firstname}  ${FAKER_FIRST_NAME}  
   Input text  ${lastname}  ${FAKER_LAST_NAME}  
+  Capture page screenshot
   Click element   ${submit_form} 
   Check for confirmation
 

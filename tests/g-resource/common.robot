@@ -2,9 +2,8 @@
 Library             SeleniumLibrary
 Library             DateTime
 
-
 *** Variables ***
-${URL}  https://www.amazon.com
+${URL}  https://www.thecrumb.com
 ${BROWSER}  headlesschrome
 
 
