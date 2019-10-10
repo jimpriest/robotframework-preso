@@ -6,7 +6,6 @@ Library             DateTime
 ${URL}  https://www.thecrumb.com
 ${BROWSER}  headlesschrome
 
-
 *** Keywords ***
 Setup Browser
   Open Browser          ${URL}   ${BROWSER}

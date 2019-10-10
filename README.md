@@ -6,7 +6,7 @@ Lightweight Alpine Docker container that runs Robot Framework using Selenium Chr
 
 This repository has a Dockerfile that creates a container to run Robot Framework scripts locally, avoiding the hassles of setting up Python and Robot Framework locally.
 
-### Versioning
+## Versioning
 
 * robotframework: latest
 * robotframework-seleniumlibrary: latest
@@ -14,10 +14,15 @@ This repository has a Dockerfile that creates a container to run Robot Framework
 * Chrome webdriver: latest
 * Chromium browser: latest
 
-### Pre-requisites
+## Pre-requisites
 
 Docker should be already installed and running.
 
+## Assumptions
+
+All of the helper scripts here are written for Mac/Linux in bash.  It should be possible to translate these over to a Windows equivilant or possibly use WSL (Windows Subsystem For Linux) to run these.
+
+## Setup
 
 ### 1) Create docker image and shared volume:
 
@@ -122,7 +127,7 @@ Found a work around for Chrome error in headless mode here which eliminates the 
 
 ## Disclaimer
 
-* I build this mainly to use for my own personal use.  YMMV. 
+* I built this for my own personal use.  YMMV. 
 * It works on my system :)
 * It is pitch black. You are likely to be eaten by a grue.
 
