@@ -28,8 +28,10 @@ ${zipcode}                      id=input_4_postal
 ${country}                      id=input_4_country
 ${country_select}               United States
 
-${small_robot}                  id=input_7_1001
-${small_robot_color}            id=input_7_custom_1001_1
+
+${small_type}                   id=input_15_0
+${small_robot_color}            id=input_16
+
 @{small_robot_color_select}     Red Blue Green Black Magenta
 
 ${additional_request}           id=input_14
@@ -40,15 +42,18 @@ ${submit_form}                  id=input_13
 Order Robot
   [Documentation]  User should be able to order a robot
   Input text  ${firstname}  ${FAKER_FIRST_NAME}  
-  Input text  ${lastname}  ${FAKER_LAST_NAME}
-  
+  Input text  ${lastname}  ${FAKER_LAST_NAME}  
   Input text  ${email}  ${FAKER_EMAIL}
-  
   Input text  ${areacode}  ${FAKER_AREA_CODE}
   Input text  ${phonenumber}  ${FAKER_PHONE_NUMBER}
-
-
-
+  Input text  ${address1}  ${FAKER_STREET_ADDRESS}
+  Input text  ${city}  ${FAKER_CITY}
+  Input text  ${state}  ${FAKER_STATE}
+  Input text  ${zipcode}  ${FAKER_ZIPCODE}
+  Select from list by value    ${country}  United States
+  Click element       ${small_type}
+  Select from list by value   ${small_robot_color}  Blue
+  Input text    ${additional_request}  ${FAKER_PARAGRAPH}
 
   Capture page screenshot
   Click element   ${submit_form} 
