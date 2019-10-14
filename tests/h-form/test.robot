@@ -40,7 +40,16 @@ ${submit_form}                  id=input_13
 Order Robot
   [Documentation]  User should be able to order a robot
   Input text  ${firstname}  ${FAKER_FIRST_NAME}  
-  Input text  ${lastname}  ${FAKER_LAST_NAME}  
+  Input text  ${lastname}  ${FAKER_LAST_NAME}
+  
+  Input text  ${email}  ${FAKER_EMAIL}
+  
+  Input text  ${areacode}  ${FAKER_AREA_CODE}
+  Input text  ${phonenumber}  ${FAKER_PHONE_NUMBER}
+
+
+
+
   Capture page screenshot
   Click element   ${submit_form} 
   Check for confirmation

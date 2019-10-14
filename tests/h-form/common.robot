@@ -54,7 +54,7 @@ Initialize Test Data
 
     ${FAKER_FIRST_NAME} =         FakerLibrary.first_name
     ${FAKER_LAST_NAME} =          FakerLibrary.last_name
-    ${FAKER_PHONE_NUMBER} =       FakerLibrary.phone_number
+    
     ${FAKER_STREET_ADDRESS} =     FakerLibrary.street_address
     ${FAKER_PARAGRAPH} =          FakerLibrary.paragraph
     ${FAKER_SENTENCE} =           FakerLibrary.sentence
@@ -69,8 +69,15 @@ Initialize Test Data
     ${FAKER_EMAIL_DOMAIN} =         FakerLibrary.free_email_domain
     ${FAKER_EMAIL}=   catenate    ${FAKER_FIRST_NAME}.${FAKER_LAST_NAME}@${FAKER_EMAIL_DOMAIN}
 
+    # Cobble together a phone number in same format form expects
+    ${FAKER_AREA_CODE} =            FakerLibrary.random_number  3
+    ${FAKER_PHONE_NUMBER1} =        FakerLibrary.random_number  3
+    ${FAKER_PHONE_NUMBER2} =        FakerLibrary.random_number  4
+    ${FAKER_PHONE_NUMBER}=   catenate    ${FAKER_PHONE_NUMBER1}-${FAKER_PHONE_NUMBER2}
+
     Set suite variable      ${FAKER_FIRST_NAME}
     Set suite variable      ${FAKER_LAST_NAME}
+    Set suite variable      ${FAKER_AREA_CODE}
     Set suite variable      ${FAKER_PHONE_NUMBER}
     Set suite variable      ${FAKER_STREET_ADDRESS}
     Set suite variable      ${FAKER_PARAGRAPH}
