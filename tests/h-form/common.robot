@@ -2,7 +2,7 @@
 Library             SeleniumLibrary
 Library             DateTime
 Library             FakerLibrary  locale=en_US
-
+Library             String
 
 *** Variables ***
 ${URL}          https://form.jotform.com/92783859042165
@@ -75,6 +75,9 @@ Initialize Test Data
     ${FAKER_PHONE_NUMBER2} =        FakerLibrary.random_number  4
     ${FAKER_PHONE_NUMBER}=   catenate    ${FAKER_PHONE_NUMBER1}-${FAKER_PHONE_NUMBER2}
 
+
+    ${RANDOM}    Generate random string    1    01
+
     Set suite variable      ${FAKER_FIRST_NAME}
     Set suite variable      ${FAKER_LAST_NAME}
     Set suite variable      ${FAKER_AREA_CODE}
@@ -87,3 +90,4 @@ Initialize Test Data
     Set suite variable      ${FAKER_COUNTRY}
     Set suite variable      ${FAKER_ZIPCODE}
     Set suite variable      ${FAKER_EMAIL}
+    Set suite variable      ${RANDOM}

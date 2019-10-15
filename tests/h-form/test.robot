@@ -28,9 +28,8 @@ ${zipcode}                      id=input_4_postal
 ${country}                      id=input_4_country
 ${country_select}               United States
 
-
-${small_type}                   id=input_15_0
-${small_robot_color}            id=input_16
+${robot_type}                   id=input_15_  # we'll make this dynamic in the test below
+${robot_color}                  id=input_16
 
 @{small_robot_color_select}     Red Blue Green Black Magenta
 
@@ -51,8 +50,8 @@ Order Robot
   Input text  ${state}  ${FAKER_STATE}
   Input text  ${zipcode}  ${FAKER_ZIPCODE}
   Select from list by value    ${country}  United States
-  Click element       ${small_type}
-  Select from list by value   ${small_robot_color}  Blue
+  Click element       ${robot_type}${RANDOM}
+  Select from list by value   ${robot_color}  Blue
   Input text    ${additional_request}  ${FAKER_PARAGRAPH}
 
   Capture page screenshot
