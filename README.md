@@ -81,17 +81,23 @@ Report:  /robot/results/report.html
 
 ## Maintenance
 
+Remove any containers and images related to this Dockerfile!  After running this you will need to rebuild your image.
+
 ```
 ./remove
 ```
 
-Remove any containers and images related to this Dockerfile!  After running this you will need to rebuild your image.
+This will cleanup files from /results. Handy to run between tests.
 
 ```
 ./cleanup
 ```
 
-This will cleanup files from /results. Handy to run between tests.
+Note each time you run a test a new container is created.  To clean these up simply run:
+
+```
+docker container prune
+```
 
 
 ## Sending additional arguments to Robot ##
