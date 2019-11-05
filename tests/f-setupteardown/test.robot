@@ -48,7 +48,7 @@ Test Teardown
     Close All Browsers
 
 Suite Teardown
-    [Documentation]   This will run before every suite
+    [Documentation]   This will run after every suite
     ${time} =    Get Time
     ${time} =    Convert Date  ${time}  result_format=%I:%M %p
     Log to console   \nEnding test (Suite Teardown) @ ${time}

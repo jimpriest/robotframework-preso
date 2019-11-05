@@ -55,5 +55,4 @@ Order Robot
   Input text    ${additional_request}  ${FAKER_PARAGRAPH}
   Capture page screenshot
   Click element   ${submit_form} 
-  Check for confirmation
   Title Should Be    Thank You
