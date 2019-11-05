@@ -40,6 +40,11 @@ ${submit_form}                  id=input_13
 *** Test Cases ***
 Order Robot
   [Documentation]  User should be able to order a robot
+  Fill out form
+  Check for confirmation
+
+*** Keywords ***
+Fill out form
   Input text  ${firstname}  ${FAKER_FIRST_NAME}  
   Input text  ${lastname}  ${FAKER_LAST_NAME}  
   Input text  ${email}  ${FAKER_EMAIL}
@@ -53,7 +58,7 @@ Order Robot
   Click element       ${robot_type}${RANDOM}
   Select from list by value   ${robot_color}  Blue
   Input text    ${additional_request}  ${FAKER_PARAGRAPH}
-  Capture page screenshot
+
+Check for confirmation
   Click element   ${submit_form} 
-  Check for confirmation
   Title Should Be    Thank You

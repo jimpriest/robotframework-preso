@@ -11,7 +11,7 @@ ${BROWSER}      headlesschrome
 *** Keywords ***
 Setup Browser
   Open Browser          ${URL}   ${BROWSER}
-  Set Window Size  1280  800
+  Set Window Size  1280  1900
 
 Suite Setup
     [Documentation]   This will run before every suite
