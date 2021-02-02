@@ -4,9 +4,10 @@ RUN apk update && apk upgrade \
   && echo @latest-stable http://nl.alpinelinux.org/alpine/latest-stable/community >> /etc/apk/repositories \
   && echo @latest-stable http://nl.alpinelinux.org/alpine/latest-stable/main >> /etc/apk/repositories \
   && apk add --no-cache \
-    chromium@latest-stable \
-    chromium-chromedriver@latest-stable \
+    chromium \
+    chromium-chromedriver \
     python3 \
+    py3-pip \
   && pip3 install robotframework robotframework-seleniumlibrary faker==2.0.1 robotframework-faker==4.2.0 \
   && rm -rf /var/lib/apt/lists/* \
     /var/cache/apk/* \
